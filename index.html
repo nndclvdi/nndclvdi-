@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio - Donanda Maulidyawati Suwondo</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+ 
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* CSS for the Skills Section */
+    .skills .skills-content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .skills .skill-item {
+      display: flex;
+      align-items: center;
+    }
+
+    .skills .skill-item i, .skills .skill-item img {
+      font-size: 2rem;
+      width: 32px;
+      height: 32px;
+      margin-right: 15px;
+      color: #007bff; 
+    }
+
+    .skills .skill-item .skill {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    .skills .skill-item img {
+      width: 32px; /* Adjust width as needed */
+      height: auto; /* Maintain aspect ratio */
+    }
+
+    @media (max-width: 768px) {
+      .skills .skills-content {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .skills .skills-content {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .portfolio-img {
+      position: relative;
+      overflow: hidden;
+      padding-top: 75%; /* Adjust this percentage to change the aspect ratio */
+      border-radius: 10px;
+      border: 2px solid #0763bb;
+    }
+
+    .portfolio-img img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+
+  <!-- =======================================================
+  * Template Name: MyResume
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Updated: Jun 27 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+<!-- test -->
+      <img src="assets/img/me/background.png" alt="">
+
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <h2>Donanda Suwondo</h2>
+            <p>I'm <span class="typed" data-typed-items="Data Analyst, Machine Learning Enthusiast, Informatics Student">...</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+            <div class="social-links">
+              <a href="https://github.com/nndclvdi?tab=repositories" target="_blank"><i class="bi bi-github"></i></a>
+              <a href="https://www.instagram.com/nndclvdi/" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/nndclvdi/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>I’m a Computer Science student at UPN "Veteran" East Java with a deep interest in data science, machine learning, and web development. Over time, I’ve explored several machine learning algorithms such as K-Means, Support Vector Machine (SVM), and Convolutional Neural Networks (CNN),detecting hand landmarks through computer vision techniques and have applied them in various self-initiated projects.
+          In addition to my machine learning projects, I also enjoy building web-based applications such as to-do list web, admin dashboards, and login interfaces using HTML, CSS, and PHP. These projects allow me to combine my interest in design, logic, and user interaction.
+          I’m familiar with tools and platforms like Google Colaboratory, SQL, Looker Studio, and Visual Studio Code. I value curiosity, continuous learning, and collaboration, and I’m currently seeking internship opportunities where I can apply what I’ve learned, grow through hands-on experience, and contribute to real-world data or tech projects.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="container">
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-4 d-flex justify-content-center">
+              <img src="assets/img/me/nnd.jpg" class="img-fluid" style="max-width: 80%;" alt="Muhammad Aulia">
+            </div>
+            <div class="col-lg-8 content">
+              <p class="fst-italic py-3">
+                Hello, I am Donanda Maulidyawati Suwondo, a Informatics student at UPN "Veteran" East Java. I have a strong interest in Machine Learning, Data Science, and Web Development. 
+               </p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Status:</strong> <span> Undergraduate student in Informatics (5th semester)</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>donandamsuwondo8@gmail.com</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Sidoarjo, Indonesia</span></li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong>University:</strong> <span>UPN "Veteran" East Java</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Major:</strong> <span>Informatics</span></li>
+                  </ul>
+                </div>
+              </div>
+              <p class="py-3">
+               I hope to apply my interest in Machine Learning, Data Analyst, Computer Vision through internship opportunities where I can gain hands-on experience, learn from professionals, and contribute in meaningful ways while continuing to grow in this field.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+  <section id="skills" class="skills section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Skills</h2>
+      <p>Here are some of my technical skills.</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="skills-content skills-animation">
+
+        <div class="skill-item">
+          <img src="assets/img/icon/sql.jpg" alt="SQL">
+          <span class="skill">SQL</span>
+        </div><!-- End Skills Item -->
+
+        <div class="skill-item">
+          <img src="assets/img/icon/postgresql.png" alt="SQL">
+          <span class="skill">PostgreSQL</span>
+        </div><!-- End Skills Item -->
+
+        <div class="skill-item">
+          <img src="assets/img/icon/dbeaver.png" alt="SQL">
+          <span class="skill">DBeaver</span>
+        </div><!-- End Skills Item -->
+
+        <div class="skill-item">
+          <img src="assets/img/icon/html.png" alt="SQL">
+          <span class="skill">HTML</span>
+        </div><!-- End Skills Item -->
+        
+        <div class="skill-item">
+          <img src="assets/img/icon/python.png" alt="Python">
+          <span class="skill">Python</span>
+        </div><!-- End Skills Item -->
+        
+        <div class="skill-item">
+          <img src="assets/img/icon/webCrawling.jpg" alt="webCrawling">
+          <span class="skill">Web Scraping</span>
+        </div><!-- End Skills Item -->
+        
+        <div class="skill-item">
+          <img src="assets/img/icon/office.png" alt="Office">
+          <span class="skill">Microsoft Office</span>
+        </div><!-- End Skills Item -->
+        
+        <div class="skill-item">
+          <img src="assets/img/icon/spreadsheet.png" alt="Spreadsheet">
+          <span class="skill">Spreadsheet</span>
+        </div><!-- End Skills Item -->
+        
+        <div class="skill-item">
+          <img src="assets/img/icon/Looker.png" alt="LookerStudio">
+          <span class="skill">Looker Studio</span>
+        </div><!-- End Skills Item -->
+        
+        <div class="skill-item">
+          <img src="assets/img/icon/css.png" alt="Tableau">
+          <span class="skill">CSS</span>
+        </div><!-- End Skills Item -->
+        
+        <div class="skill-item">
+          <img src="assets/img/icon/powerBI.png" alt="PowerBI">
+          <span class="skill">Power BI</span>
+        </div><!-- End Skills Item -->
+
+        <div class="skill-item">
+          <img src="assets/img/icon/php.png" alt="pentaho">
+          <span class="skill">PHP</span>
+        </div><!-- End Skills Item -->
+        
+
+        <div class="skill-item">
+          <!-- <i src="assets/img/apple-touch-icon.png"></i> -->
+          <img src="assets/img/icon/scikitlearn.png" alt="ScikitLearn">
+          <span class="skill">Scikit-Learn</span>
+        </div><!-- End Skills Item -->
+        
+        <div class="skill-item">
+          <!-- <i src="assets/img/apple-touch-icon.png"></i> -->
+          <img src="assets/img/icon/vscode.png" alt="Pytorch">
+          <span class="skill">VS Code</span>
+        </div><!-- End Skills Item -->
+
+        <div class="skill-item">
+          <!-- <i src="assets/img/apple-touch-icon.png"></i> -->
+          <img src="assets/img/icon/claude-color.png" alt="Keras">
+          <span class="skill">Claude</span>
+        </div><!-- End Skills Item -->
+        
+        <div class="skill-item">
+          <!-- <i src="assets/img/apple-touch-icon.png"></i> -->
+          <img src="assets/img/icon/chatgpt.png" alt="chatgpt">
+          <span class="skill">Chat GPT</span>
+        </div><!-- End Skills Item -->
+
+        <div class="skill-item">
+          <!-- <i src="assets/img/apple-touch-icon.png"></i> -->
+          <img src="assets/img/icon/gemini.png" alt="gemini">
+          <span class="skill">Gemini</span>
+        </div><!-- End Skills Item -->
+        
+      </div>
+
+    </div>
+
+  </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>I am developing a strong foundation in Big Data and Artificial Intelligence, supported by my education in Computer Science at UPN "Veteran" East Java. I have worked on several hands-on projects involving clustering, image classification, and data processing using tools like Python, Google Colab, and TensorFlow. These projects have helped me strengthen my understanding of core machine learning concepts and their real-world applications. I’m eager to gain real-world experience through internships and contribute to impactful, data-driven solutions.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Donanda Maulidyawati Suwondo</h4>
+              <p><em>A recent graduate student with a keen interest and experience in the fields of Big Data and Artificial Intelligence.</em></p>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4> Undergraduate student in Informatics (5th semester)</h4>
+              <h5>2023 - Recent</h5>
+              <p><em>UPN "Veteran" East Java</em></p>
+            </div><!-- Edn Resume Item -->
+            
+            <h3 class="resume-title">Certifications</h3>
+            <div class="resume-item">
+              <h4>Belajar Machine Learning untuk Pemula</h4>
+              <h5>Dicoding</h5>
+              <p><em>Learned the fundamentals of Machine Learning using Python and scikit-learn, including supervised and unsupervised learning, model evaluation, and basic implementation.</em>
+                <a href="https://www.dicoding.com/certificates/MRZM65LVRPYQ" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a></p>
+            </div><!-- Edn Resume Item -->
+            <div class="resume-item">
+              <h4>Design a data ingestion strategy for machine learning projects</h4>
+              <h5>Microsoft</h5>
+              <p><em>Completed a module focused on designing end-to-end machine learning solutions. Covered key steps such as identifying data sources and formats, selecting data serving methods, designing data ingestion strategies, and evaluating workflow architecture through practical exercises.</em>
+               <a href="https://learn.microsoft.com/en-us/users/donandamaulidyawatisuwondo-7181/achievements/w2tk4sqn?ref=https%3A%2F%2Fwww.linkedin.com%2F" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a></p>
+            </div><!-- Edn Resume Item -->
+            <div class="resume-item">
+              <h4>Guide to Learn Python with AI at DQLab</h4>
+              <h5>DQLab</h5>
+              <p><em>Completed an introductory course on Python programming for data science.</em>
+              <a href="https://academy.dqlab.id/certificate/pdf/DQLABAI001GSJUIS" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a></p>
+            </div><!-- Edn Resume Item -->
+            <div class="resume-item">
+              <h4>Python</h4>
+              <h5>Kaggle</h5>
+              <p><em>Completed an introductory course on Python programming.</em>
+              <a href="https://www.kaggle.com/learn/certification/nndclvdii/python" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a></p>
+            </div><!-- Edn Resume Item -->
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Experience</h3>
+            <div class="resume-item">
+              <h4>Pretty Lovely Cheerleading</h4>
+              <h5>Jan 2022 – Dec 2022 . <b>12 Month</b></h5>
+              <p><em>Captain of Cheerleading Team</em></p>
+              <ul>
+                <li>Led the cheerleading team as captain at SMA Negeri 4 Sidoarjo for one academic year (2022).</li>
+                <li>Achieved 2nd place in Level 6 regional cheerleading competition.</li>
+                <li>Organized training, choreographed routines, and coordinated team performances for events and contests.</li>
+                <li>Enhanced team collaboration, confidence, and discipline through structured leadership and communication.</li>
+              </ul> 
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>BEM Fakultas Ilmu Komputer UPN "Veteran" Jawa Timur</h4>
+              <h5>May 2024 - Jan 2025 . <b>9 Month</b></h5>
+              <p><em>Secretary of Arts and Sports Division</em></p>
+              <ul>
+               <li>Served as Secretary of the Arts and Sports Division at BEM Faculty of Computer Science, UPN "Veteran" Jawa Timur (May 2024 – Mar 2025).</li>
+                <li>Managed administrative duties including proposal drafting, event documentation, and reporting for faculty-wide programs.</li>
+                <li>Successfully initiated and organized "Fasilkom Fest," a multi-event competition involving students from all departments.</li>
+                <li>Drafted standardized proposal templates and execution plans used across the division’s annual programs.</li>
+                <li>Acted as liaison between the division and BEM executive board, ensuring smooth communication and alignment with the annual work plan.</li>
+                <li>Applied skills in event planning, documentation, Microsoft Word, communication, time management, and team coordination.</li>
+                <a href="https://drive.google.com/file/d/1MQGIfpIde5EmShj0HDyXU1v8kfPDOssw/view?usp=sharing" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+              </ul>
+            </div><!-- Edn Resume Item -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Project</h2>
+      <p>As someone passionate about data and technology, I am excited to showcase my projects that reflect my journey in applying Machine Learning, Data Analysis, and Artificial Intelligence. Each project is thoughtfully crafted to solve real-world problems and extract meaningful insights through data-driven approaches. By leveraging powerful tools and algorithms, I aim to contribute impactful solutions that support innovation across various domains.</p>     
+     </div><!-- End Section Title -->
+      <div class="container">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+          </ul><!-- End Portfolio Filters -->
+        
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+        
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-img">
+                <img src="assets/img/portfolio/1751199888718.jpeg" alt="">
+              </div>
+              <div class="portfolio-info">
+                <h4>Enka Jamu</h4>
+                <p>Website & Admin Dashboard CRUD</p>
+                   <!-- Drive Link -->
+                    <a href="https://drive.google.com/file/d/1IFWTUaRH4ta8SskU4yqXMCySWyOZIy9F/view?usp=sharing" 
+                      title="View Report on Google Drive" target="_blank"
+                      style="font-size: 1.5rem; color: #343a40;">
+                      <i class="bi bi-file-earmark-text"></i>
+                    </a>
+                    <a href="https://nndclvdi.github.io/Enka-Jamu/" 
+                      title="View Report on Google Drive" target="_blank"
+                      style="font-size: 1.5rem; color: #343a40;">
+                      <i class="bi bi-link-45deg"></i>
+                    </a>
+
+                    <!-- GitHub Link -->
+                    <a href="https://github.com/nndclvdi/EnkaJamuAdminLTE" 
+                      title="View Code on GitHub" target="_blank"
+                      style="font-size: 1.5rem; color: #343a40;">
+                      <i class="bi bi-github"></i>
+                    </a>
+              </div>
+            </div><!-- End Portfolio Item -->
+        
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-img">
+                <img src="assets/img/portfolio/ss1.png" alt="">
+              </div>
+              <div class="portfolio-info">
+                <h4>Machine Learning (K-means)</h4>
+                <p>Clustering Bank Transaction Dataset with K-means</p>
+                <a href="https://github.com/nndclvdi/kmeans-clustering-bank-transaction" title="More Details" class="details-link" target="_blank"><i class="bi bi-github"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+        
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-img">
+                <img src="assets/img/portfolio/WhatsApp Image 2025-07-11 at 00.50.38.jpeg" alt="">
+              </div>
+              <div class="portfolio-info">
+                <h4>Basic Hand Landmark Detection</h4>
+                <p>Hand landmark detection computer vision</p>
+                <a href="https://github.com/nndclvdi/handlandmark-detection" title="More Details" class="details-link" target="_blank"><i class="bi bi-github"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+        
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-img">
+                <img src="assets/img/portfolio/Screenshot 2025-07-11 at 00.52.50.png" alt="">
+              </div>
+              <div class="portfolio-info">
+                <h4>Listly Web</h4>
+                <p>To-do Planner</p>
+                <a href="https://nndclvdi.github.io/listly-to-do-list/" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+        
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-img">
+                <img src="assets/img/portfolio/looker.jpeg" alt="">
+              </div>
+              <div class="portfolio-info">
+                <h4>Dashboard Visualization</h4>
+                <p>Dashboard Walmart Sales</p>
+                <a href="https://lookerstudio.google.com/reporting/0596671f-fd3f-4496-8230-077c25767be5" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+        
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-img">
+                <img src="assets/img/portfolio/backend.png" alt="">
+              </div>
+              <div class="portfolio-info">
+                <h4>Enka Wedding Backend</h4>
+                <p>Backend Website</p>
+                 <!-- Drive Link -->
+                    <a href="https://drive.google.com/file/d/1Go3e-tXdDAso8OYhTvMYA5guropBQ566/view?usp=drive_link" 
+                      title="View Report on Google Drive" target="_blank"
+                      style="font-size: 1.5rem; color: #343a40;">
+                      <i class="bi bi-file-earmark-text"></i>
+                    </a>
+                    <!-- GitHub Link -->
+                    <a href="https://github.com/nndclvdi/enkaweddingbackend" 
+                      title="View Code on GitHub" target="_blank"
+                      style="font-size: 1.5rem; color: #343a40;">
+                      <i class="bi bi-github"></i>
+                    </a>
+              </div>
+            </div><!-- End Portfolio Item -->
+        
+          </div><!-- End Portfolio Container -->
+        
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>...</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="container" data-aos="fade" data-aos-delay="100">
+  <div class="row gy-4">
+    <div class="col-lg-4">
+      
+      <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+        <i class="bi bi-geo-alt flex-shrink-0"></i>
+        <div>
+          <h3>Address</h3>
+          <p>Sidoarjo, Jawa Timur 61271</p>
+        </div>
+      </div><!-- End Info Item -->
+
+      <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+        <i class="bi bi-envelope flex-shrink-0"></i>
+        <div>
+          <h3>Email</h3>
+          <p><a href="mailto:donandamsuwondo@gmail.com">donandamsuwondo@gmail.com</a></p>
+        </div>
+      </div><!-- End Info Item -->
+
+      <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+        <i class="bi bi-whatsapp flex-shrink-0"></i>
+        <div>
+          <h3>WhatsApp</h3>
+          <p><a href="https://wa.me/6289515776630" target="_blank">+62 895-1577-6630</a></p>
+        </div>
+      </div><!-- End Info Item -->
+
+    </div>
+  </div>
+</div>
+
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Donanda Maulidyawati Suwondo</h3>
+      <p>Undergraduate Informatics Student</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/nndclvdi?tab=repositories" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/nndclvdi/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/nndclvdi/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://wa.me/6289515776630" target="_blank" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        <a href="mailto:donandamsuwondo@gmail.com" target="_blank" title="Email"><i class="bi bi-envelope-fill"></i></a>
+
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Donanda Suwondo</strong> <span>All Rights Reserved</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
